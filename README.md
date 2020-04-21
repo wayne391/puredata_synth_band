@@ -1,7 +1,8 @@
 # PureData Synthesizer Band
 
 
-**Course: 108-2數位聲音藝術與創作, NTU, Homework 1**
+**Course: 108-2數位聲音藝術與創作, NTU, Homework 1**  
+**Contributors:** [waynes391](https://github.com/wayne391), [Phycause](https://github.com/phycause)
 
 We build a tiny band composed of 4 synthetic instruments: **drum set(hihat, kick, sanre), bass, lead, electic organ**.
 
