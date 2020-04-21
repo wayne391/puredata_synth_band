@@ -21,4 +21,6 @@ Given a midi, our band will perform it. Before running our pd program, use [midi
     * Kick: https://www.youtube.com/watch?v=Ksw3aCvI4Zc
     * Snare: https://www.youtube.com/watch?v=OF-7Cl3j4G4
     * Hihat: https://www.youtube.com/watch?v=kemL3pBSYfQ
+* Lead and Oragn:
+    * Wavetable Synthesis: https://www.youtube.com/watch?v=4QQdAT3uxmc
 

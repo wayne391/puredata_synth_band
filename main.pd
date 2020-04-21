@@ -1,13 +1,13 @@
-#N canvas 7 45 1423 738 12;
+#N canvas 17 60 1423 738 12;
 #X obj 745 694 dac~;
-#X obj 972 105 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 972 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 940 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 954 188 int 0;
-#X obj 1007 188 + 1;
-#X floatatom 1045 215 5 0 0 0 - - -;
-#X obj 1043 188 % 16;
+#X obj 954 203 int 0;
+#X obj 1007 203 + 1;
+#X floatatom 1045 203 5 0 0 0 - - -;
+#X obj 1043 203 % 16;
 #N canvas 132 504 543 249 drum_machine 0;
 #N canvas 321 324 450 300 (subpatch) 0;
 #X obj 64 61 inlet;
@@ -224,7 +224,7 @@
 #X connect 18 0 16 0;
 #X connect 18 0 19 0;
 #X coords 0 -1 1 1 360 24 2 100 100;
-#X restore 1045 242 pd drum_machine;
+#X restore 1043 243 pd drum_machine;
 #N canvas 131 504 543 188 drum_machine 0;
 #N canvas 321 324 450 300 (subpatch) 0;
 #X obj 64 61 inlet;
@@ -441,7 +441,7 @@
 #X connect 17 0 16 0;
 #X connect 17 0 18 0;
 #X coords 0 -1 1 1 360 24 2 100 100;
-#X restore 1045 273 pd drum_machine;
+#X restore 1043 288 pd drum_machine;
 #N canvas 132 504 543 284 drum_machine 0;
 #N canvas 321 324 450 300 (subpatch) 0;
 #X obj 64 61 inlet;
@@ -658,7 +658,7 @@
 #X connect 17 0 16 0;
 #X connect 17 0 18 0;
 #X coords 0 -1 1 1 360 24 2 100 100;
-#X restore 1045 306 pd drum_machine;
+#X restore 1043 333 pd drum_machine;
 #N canvas 659 203 542 414 instr_kick 0;
 #X obj 105 105 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -901,7 +901,7 @@
 #X connect 13 0 11 0;
 #X connect 13 0 12 0;
 #X coords 0 -1 1 1 240 24 2 100 100;
-#X restore 802 274 pd;
+#X restore 801 287 pd;
 #N canvas 990 256 450 424 hihat 0;
 #X floatatom 165 103 5 0 0 0 - - -;
 #X obj 105 105 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -969,8 +969,8 @@
 #X connect 10 0 7 0;
 #X connect 10 0 8 0;
 #X coords 0 -1 1 1 240 24 2 100 100;
-#X restore 802 306 pd hihat;
-#X obj 971 144 metro 250;
+#X restore 801 332 pd hihat;
+#X obj 972 145 metro 250;
 #N canvas 387 469 914 443 volume 0;
 #X obj 421 132 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 6985 1;
@@ -1005,8 +1005,8 @@
 #X connect 13 0 12 0;
 #X connect 14 0 11 0;
 #X coords 0 -1 1 1 60 170 2 400 100;
-#X restore 816 419 pd volume;
-#X obj 725 620 *~ 1;
+#X restore 816 421 pd volume;
+#X obj 736 612 *~ 1;
 #N canvas 611 271 914 443 volume 0;
 #X obj 421 132 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 5715 1;
@@ -1041,7 +1041,7 @@
 #X connect 13 0 11 0;
 #X connect 14 0 12 0;
 #X coords 0 -1 1 1 60 170 2 400 100;
-#X restore 736 419 pd volume;
+#X restore 736 421 pd volume;
 #N canvas 611 271 914 443 volume 0;
 #X obj 421 132 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 5715 1;
@@ -1076,11 +1076,11 @@
 #X connect 13 0 12 0;
 #X connect 14 0 11 0;
 #X coords 0 -1 1 1 60 170 2 400 100;
-#X restore 659 418 pd volume;
-#X obj 790 619 *~ 1;
-#X msg 643 28 read score.txt;
-#X obj 642 72 qlist;
-#X msg 776 31 bang;
+#X restore 659 421 pd volume;
+#X obj 790 620 *~ 1;
+#X msg 643 30 read score.txt;
+#X obj 643 70 qlist;
+#X msg 776 30 bang;
 #N canvas 256 387 450 300 bass 0;
 #X floatatom 166 103 5 0 0 0 - - -;
 #X floatatom 206 103 5 0 0 0 - - -;
@@ -1232,7 +1232,7 @@
 #X connect 14 0 4 0;
 #X coords 0 -1 1 1 240 24 2 100 100;
 #X restore 489 281 pd bass;
-#X obj 725 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 725 203 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #N canvas 463 344 914 443 volume 0;
 #X obj 421 132 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
@@ -1591,8 +1591,8 @@
 #X connect 13 0 5 0;
 #X connect 15 0 11 0;
 #X coords 0 -1 1 1 120 24 2 100 100;
-#X restore 903 384 pd synth_lead;
-#X msg 228 32 \; synth_lead sinesum 2051 1;
+#X restore 903 369 pd synth_lead;
+#X msg 228 30 \; synth_lead sinesum 2051 1;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array comp 2051 float 3;
 #A 0 -0.00306795 0 0.00306795 0.00613588 0.00920375 0.0122715 0.0153392
@@ -1873,10 +1873,10 @@
 -0.0214794 -0.018412 -0.0153445 -0.0122768 -0.00920905 -0.00614119
 -0.00307326 -5.30718e-06 0.00306265;
 #X coords 0 1 2051 -1 200 140 1 0 0;
-#X restore 23 203 graph;
-#X msg 227 205 \; comp sinesum 2051 1;
-#X msg 228 71 \; synth_lead sinesum 2051 1 0.5 0.33 0.25;
-#X msg 228 109 \; synth_lead normalize 1;
+#X restore 24 191 graph;
+#X msg 228 192 \; comp sinesum 2051 1;
+#X msg 228 84 \; synth_lead sinesum 2051 1 0.5 0.33 0.25;
+#X msg 228 138 \; synth_lead normalize 1;
 #N canvas 624 177 546 375 comp_machine 0;
 #X obj 113 41 r c1p;
 #X obj 112 66 r c1d;
@@ -2112,7 +2112,7 @@
 #X connect 13 0 12 0;
 #X connect 14 0 11 0;
 #X coords 0 -1 1 1 60 170 2 400 100;
-#X restore 903 415 pd volume;
+#X restore 903 414 pd volume;
 #N canvas 611 271 914 443 volume 0;
 #X obj 421 132 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 7620 1;
@@ -2148,10 +2148,10 @@
 #X connect 14 0 11 0;
 #X coords 0 -1 1 1 60 170 2 400 100;
 #X restore 500 421 pd volume;
-#X msg 982 417 \; set_pan_hh 0.4 \; set_pan_sd 0.1 \; set_pan_bd 0
+#X msg 982 421 \; set_pan_hh 0.4 \; set_pan_sd 0.1 \; set_pan_bd 0
 \; set_pan_bass 0 \; set_pan_comp -0.5 \; set_pan_synth_lead 0.5 \;
 ;
-#X msg 978 531 \; set_vol_hh 0.55 \; set_vol_sd 0.45 \; set_vol_bd
+#X msg 982 545 \; set_vol_hh 0.55 \; set_vol_sd 0.45 \; set_vol_bd
 0.45 \; set_vol_bass 0.65 \; set_vol_comp 0.6 \; set_vol_synth_lead
 0.65 \;;
 #X connect 1 0 13 0;
