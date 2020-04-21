@@ -1,4 +1,4 @@
-#N canvas 104 83 1437 778 12;
+#N canvas 7 45 1423 738 12;
 #X obj 745 694 dac~;
 #X obj 972 105 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -978,7 +978,7 @@
 #X obj 144 373 outlet~;
 #X obj 242 378 outlet~;
 #X obj 406 109 hsl 50 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 3430 1;
 #X obj 242 182 expr ($f1 + 1)/2;
 #X obj 251 317 *~ 1;
 #X obj 154 317 *~ 1;
@@ -1014,7 +1014,7 @@
 #X obj 144 373 outlet~;
 #X obj 242 378 outlet~;
 #X obj 406 109 hsl 50 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 2695 1;
 #X obj 242 182 expr ($f1 + 1)/2;
 #X obj 251 317 *~ 1;
 #X obj 154 317 *~ 1;
@@ -1049,7 +1049,7 @@
 #X obj 144 373 outlet~;
 #X obj 242 378 outlet~;
 #X obj 406 109 hsl 50 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 2450 1;
 #X obj 242 182 expr ($f1 + 1)/2;
 #X obj 251 317 *~ 1;
 #X obj 154 317 *~ 1;
@@ -1081,7 +1081,7 @@
 #X msg 643 28 read score.txt;
 #X obj 642 72 qlist;
 #X msg 776 31 bang;
-#N canvas 244 570 450 300 bass 0;
+#N canvas 256 387 450 300 bass 0;
 #X floatatom 166 103 5 0 0 0 - - -;
 #X floatatom 206 103 5 0 0 0 - - -;
 #X floatatom 246 103 5 0 0 0 - - -;
@@ -1241,7 +1241,7 @@
 #X obj 144 373 outlet~;
 #X obj 242 378 outlet~;
 #X obj 406 109 hsl 50 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 2450 1;
 #X obj 242 182 expr ($f1 + 1)/2;
 #X obj 251 317 *~ 1;
 #X obj 154 317 *~ 1;
@@ -2085,7 +2085,7 @@
 #X obj 144 373 outlet~;
 #X obj 242 378 outlet~;
 #X obj 406 109 hsl 50 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 3675 1;
 #X obj 242 182 expr ($f1 + 1)/2;
 #X obj 251 317 *~ 1;
 #X obj 154 317 *~ 1;
@@ -2115,12 +2115,12 @@
 #X restore 903 415 pd volume;
 #N canvas 611 271 914 443 volume 0;
 #X obj 421 132 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 6350 1;
+-1 -1 7620 1;
 #X obj 318 273 *~ 1;
 #X obj 144 373 outlet~;
 #X obj 242 378 outlet~;
 #X obj 406 109 hsl 50 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1225 1;
 #X obj 242 182 expr ($f1 + 1)/2;
 #X obj 251 317 *~ 1;
 #X obj 154 317 *~ 1;
