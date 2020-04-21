@@ -11,7 +11,7 @@ We build a tiny band composed of 4 synthetic instruments: **drum set(hihat, kick
 * Demo video: [link](data/demo.mov)
 
 
-Given a midi, our band will perform it. Before running our pd program, use [midi2txt.py](midi2txt.py) to generate text file for qlist.
+Given a midi, our band will perform it. Use [midi2txt.py](midi2txt.py) to convert MIDI to text file. 
 
 ---
 
